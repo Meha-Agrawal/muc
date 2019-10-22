@@ -35,7 +35,7 @@ export default GeneralSearch = props => {
               marginRight: 10
             }}
             onChangeText={text => onChange(text)}
-            placeholder="where to?"
+            placeholder="search"
             value={location}
           />
           <TouchableOpacity
