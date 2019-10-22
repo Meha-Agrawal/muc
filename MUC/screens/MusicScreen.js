@@ -15,7 +15,6 @@ export default MusicScreen = props => {
   const [uriString, onChangeUriString] = React.useState(
     "https://www.youtube.com/results?search_query="
   );
-  const [musicArr, onChangeMusicArr] = React.useState(["tests"]);
   return (
     <>
       <View>
@@ -41,14 +40,7 @@ export default MusicScreen = props => {
           />
           <TouchableOpacity
             onPress={() =>
-              onPressGo(
-                onGoPress,
-                onChangeMusicArr,
-                music,
-                musicArr,
-                uriString,
-                onChangeUriString
-              )
+              onPressGo(onGoPress, music, uriString, onChangeUriString)
             }
           >
             <Text style={styles.goButton}>Go</Text>
@@ -75,18 +67,10 @@ export default MusicScreen = props => {
   );
 };
 
-const onPressGo = (
-  onGoPress,
-  onChangeMusicArr,
-  music,
-  musicArr,
-  uriString,
-  onChangeUriString
-) => {
+const onPressGo = (onGoPress, music, uriString, onChangeUriString) => {
   onGoPress(true);
   Keyboard.dismiss();
   const words = music.split(" ");
-  onChangeMusicArr(words);
   changeURI(words, uriString, onChangeUriString);
 };
 
