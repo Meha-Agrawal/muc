@@ -14,16 +14,20 @@ export default HomeScreen = props => {
         </TouchableOpacity>
       </View>
       <View style={styles.buttonContainer}>
-        <TouchableOpacity>
-          <Text style={styles.button}>Traffic</Text>
+        <TouchableOpacity
+          onPress={() => props.navigation.navigate("Directions")}
+        >
+          <Text style={styles.button}>Directions</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => props.navigation.navigate("Music")}>
           <Text style={styles.button}>Music</Text>
         </TouchableOpacity>
       </View>
       <View style={styles.buttonContainer}>
-        <TouchableOpacity>
-          <Text style={styles.button}>Latest News</Text>
+        <TouchableOpacity
+          onPress={() => props.navigation.navigate("CurrentTime")}
+        >
+          <Text style={styles.button}>Current Time</Text>
         </TouchableOpacity>
         <TouchableOpacity>
           <Text style={styles.button}>Other</Text>
