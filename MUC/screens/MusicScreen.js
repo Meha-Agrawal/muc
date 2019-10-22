@@ -1,9 +1,8 @@
 import React from "react";
 import { Text, StyleSheet, View, TouchableOpacity } from "react-native";
-import { WeatherWidget } from "react-native-weather";
 import { WebView } from "react-native-webview";
 
-export default TimerScreen = props => {
+export default MusicScreen = props => {
   return (
     <>
       <View>
@@ -13,11 +12,7 @@ export default TimerScreen = props => {
       </View>
       <View style={styles.container}>
         <View style={{ height: 600, width: 300, overflow: "hidden" }}>
-          <WebView
-            source={{
-              uri: "https://www.google.com/search?q=weather+atlanta"
-            }}
-          />
+          <WebView source={{ uri: "https://youtube.com" }} />
         </View>
       </View>
     </>

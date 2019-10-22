@@ -17,7 +17,7 @@ export default HomeScreen = props => {
         <TouchableOpacity>
           <Text style={styles.button}>Traffic</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => props.navigation.navigate("Music")}>
           <Text style={styles.button}>Music</Text>
         </TouchableOpacity>
       </View>

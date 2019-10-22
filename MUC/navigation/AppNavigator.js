@@ -7,6 +7,7 @@ import HomeScreen from "../screens/HomeScreen";
 import TimerScreen from "../screens/TimerScreen";
 import RatingScreen from "../screens/RatingScreen";
 import WeatherScreen from "../screens/WeatherScreen";
+import MusicScreen from "../screens/MusicScreen";
 
 export default createAppContainer(
   createSwitchNavigator({
@@ -16,6 +17,7 @@ export default createAppContainer(
     Home: HomeScreen,
     Timer: TimerScreen,
     Weather: WeatherScreen,
+    Music: MusicScreen,
     Rating: RatingScreen
   })
 );
