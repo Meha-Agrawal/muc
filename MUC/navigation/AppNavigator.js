@@ -8,6 +8,7 @@ import WeatherScreen from "../screens/WeatherScreen";
 import MusicScreen from "../screens/MusicScreen";
 import DirectionsScreen from "../screens/DirectionsScreen";
 import CurrentTimeScreen from "../screens/CurrentTimeScreen";
+import GeneralSearchScreen from "../screens/GeneralSearchScreen";
 
 export default createAppContainer(
   createSwitchNavigator({
@@ -19,6 +20,7 @@ export default createAppContainer(
     Music: MusicScreen,
     Directions: DirectionsScreen,
     CurrentTime: CurrentTimeScreen,
+    GeneralSearch: GeneralSearchScreen,
     Rating: RatingScreen
   })
 );

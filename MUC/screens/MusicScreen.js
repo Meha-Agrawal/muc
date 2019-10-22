@@ -19,7 +19,7 @@ export default MusicScreen = props => {
     <>
       <View>
         <TouchableOpacity onPress={() => props.navigation.navigate("Home")}>
-          <Text style={styles.backButton}>{"<"}Back</Text>
+          <Text style={styles.backButton}>{"<"}back</Text>
         </TouchableOpacity>
       </View>
       <View style={styles.fullContainer}>
@@ -46,22 +46,20 @@ export default MusicScreen = props => {
             <Text style={styles.goButton}>Go</Text>
           </TouchableOpacity>
         </View>
-        {showWeb && (
-          <View
-            style={{
-              marginTop: 10,
-              height: 510,
-              width: 300,
-              overflow: "hidden"
+        <View
+          style={{
+            marginTop: 10,
+            height: 510,
+            width: 300,
+            overflow: "hidden"
+          }}
+        >
+          <WebView
+            source={{
+              uri: uriString
             }}
-          >
-            <WebView
-              source={{
-                uri: uriString
-              }}
-            />
-          </View>
-        )}
+          />
+        </View>
       </View>
     </>
   );
@@ -96,7 +94,11 @@ const styles = StyleSheet.create({
   },
   backButton: {
     marginTop: 40,
-    marginLeft: 20
+    marginLeft: 20,
+    backgroundColor: "#E5E5E5",
+    maxWidth: 60,
+    padding: 10,
+    borderRadius: 20
   },
   goButton: {
     backgroundColor: "#E5E5E5",

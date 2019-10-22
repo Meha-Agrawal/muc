@@ -29,8 +29,10 @@ export default HomeScreen = props => {
         >
           <Text style={styles.button}>Current Time</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
-          <Text style={styles.button}>Other</Text>
+        <TouchableOpacity
+          onPress={() => props.navigation.navigate("GeneralSearch")}
+        >
+          <Text style={styles.button}>General Question</Text>
         </TouchableOpacity>
       </View>
     </View>

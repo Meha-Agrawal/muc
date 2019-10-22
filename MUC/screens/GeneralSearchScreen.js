@@ -9,11 +9,11 @@ import {
 } from "react-native";
 import { WebView } from "react-native-webview";
 
-export default DirectionsScreen = props => {
+export default GeneralSearch = props => {
   const [location, onChange] = React.useState("");
   const [showWeb, onGoPress] = React.useState(false);
   const [uriString, onChangeUriString] = React.useState(
-    "https://www.google.com/maps/search/?api=1&query="
+    "https://www.google.com/search?q="
   );
   return (
     <>

@@ -17,7 +17,7 @@ export default TimerScreen = props => {
     <>
       <View>
         <TouchableOpacity onPress={() => props.navigation.navigate("Home")}>
-          <Text style={styles.backButton}>{"<"}Back</Text>
+          <Text style={styles.backButton}>{"<"}back</Text>
         </TouchableOpacity>
       </View>
       <View style={styles.fullContainer}>
@@ -99,7 +99,11 @@ const styles = StyleSheet.create({
   },
   backButton: {
     marginTop: 40,
-    marginLeft: 20
+    marginLeft: 20,
+    backgroundColor: "#E5E5E5",
+    maxWidth: 60,
+    padding: 10,
+    borderRadius: 20
   },
   goButton: {
     backgroundColor: "#E5E5E5",
